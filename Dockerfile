@@ -9,6 +9,7 @@ RUN pip install pymongo
 RUN pip install nltk
 RUN pip install sqlalchemy
 RUN pip install pymysql
+RUN pip install MySQL-python
 
 USER main
 
