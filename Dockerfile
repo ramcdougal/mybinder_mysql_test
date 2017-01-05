@@ -8,6 +8,7 @@ RUN apt-get install -y mysql-server
 RUN pip install pymongo
 RUN pip install nltk
 RUN pip install sqlalchemy
+RUN pip install pymysql
 
 USER main
 
