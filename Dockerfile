@@ -13,7 +13,7 @@ RUN pip install pymysql
 RUN pip install MySQL-python
 
 # let's give ourselves an initial MySQL database
-RUN mysqld_safe 
+RUN /etc/init.d/mysql start
 RUN mysql -u root -e "create database test"; 
 
 USER main
